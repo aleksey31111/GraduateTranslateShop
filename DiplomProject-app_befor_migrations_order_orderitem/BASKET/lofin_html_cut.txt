@@ -1,0 +1,23 @@
+<div class="card-body">
+                                <!-- UsernameForm PasswordForm-->
+                                <form method="post" action="{% url 'login' %}">
+                                    {% csrf_token %}
+                                    {{ form.as_p }}
+
+
+                                <div class="form-group">
+                                    <label class="small mb-1" for="inputEmailAddress">Имя пользователя</label>
+                                    {{ form.username }}
+                                </div>
+                                <div class="form-group">
+                                    <label class="small mb-1" for="inputEmailAddress">Пароль</label>
+                                </div>
+
+                                <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
+                                    <a class="small" href="#">Забыли пароль?</a>
+                                        <input class="btn btn-primary" type="submit" value="Авторизоваться">
+                                </div>
+
+                                </form>
+                                <!-- /UsernameForm /PaswordForm -->
+                            </div>

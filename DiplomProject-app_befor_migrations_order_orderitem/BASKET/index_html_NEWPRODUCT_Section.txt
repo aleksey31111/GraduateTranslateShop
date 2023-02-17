@@ -1,0 +1,169 @@
+<!-- 108 -->		<!-- SECTION -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+
+					<!-- section title -->
+					<div class="col-md-12">
+						<div class="section-title">
+							<h3 class="title">Новые товары</h3>
+							<div class="section-nav">
+								<ul class="section-tab-nav tab-nav">
+									<li class="active"><a data-toggle="tab" href="#tab1">Диски</a></li>
+									<li><a data-toggle="tab1" href="#tab1">Аксессуары</a></li>
+									<li><a data-toggle="tab" href="#tab1">Роботы</a></li>
+									<li><a data-toggle="tab" href="#tab1">Диски</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- /section title -->
+
+					<!-- Products tab & slick -->
+
+					<div class="col-md-12">
+						<div class="row">
+
+							<div class="products-tabs">
+								<!-- tab -->
+								<div id="tab1" class="tab-pane active">
+									<div class="products-slick" data-nav="#slick-nav-1">
+										<!-- 1product -->
+
+										<div class="product">
+											<div class="product-img">
+
+												<img src="{% static 'img/headphone.jpg' %}" alt="">
+												<div class="product-label">
+													<span class="sale">-30%</span>
+													<span class="new">Новые Аксессуары</span>
+												</div>
+
+											</div>
+
+											<div class="product-body">
+
+												<p class="product-category">Аксессуары</p>
+
+												<h3 class="product-name">
+													<a href="">
+														Наушники складные светодиодные
+													</a>
+												</h3>
+
+												<h4 class="product-price">8888.88 руб</h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+												<div class="product-btns">
+													<button class="add-to-wishlist" formaction=""><i class="fa fa-heart-o"></i><span class="tooltipp">Добавить в избранные</span></button>
+													<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Добавить к сравнению</span></button>
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Быстрый просмотр</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<a href="{{ basket_add.product_id }}">
+												<button class="add-to-cart-btn">
+													<i class="fa fa-shopping-cart">
+
+													</i> Добавить в корзину
+												</button>
+												</a>
+											</div>
+
+										</div>
+
+										<!-- 1/product -->
+										<!-- 136 --> <!-- 2product -->
+										<div class="product">
+											<div class="product-img">
+												<img src="{% static 'img/product02.png' %}" alt="">
+												<div class="product-label">
+													<span class="new">NEW</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">Диски</p>
+												<h3 class="product-name"><a href="#">remnant-from-the-ashes</a></h3>
+												<h4 class="product-price">987.00 руб <del class="product-old-price">$990.00</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												<div class="product-btns">
+													<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+													<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+											</div>
+										</div>
+										<!--2 /product -->
+
+
+
+
+										<!-- BASKET index_Electro_html.txt -->
+									</div>
+									<div id="slick-nav-1"
+										 class="products-slick-nav"></div>
+								</div>
+								<!-- /tab -->
+
+							</div>
+
+						</div>
+					</div>
+
+					<!-- Products tab & slick -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->
+
+
+<!-- 177 -->
+											<div class="add-to-cart">
+												<a href="{{ basket_add.product_id }}">
+												<button class="add-to-cart-btn">
+													<i class="fa fa-shopping-cart">
+
+													</i> Добавить в корзину
+												</button>
+												</a>
+											</div>
+
+
+
+<!-- 215 -->
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+											</div>
+
+<!-- 214 -->
+												<div class="product-btns">
+													<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+													<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+												</div>
+
+
+<!-- 171 -->
+												<div class="product-btns">
+													<button class="add-to-wishlist" formaction=""><i class="fa fa-heart-o"></i><span class="tooltipp">Добавить в избранные</span></button>
+													<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Добавить к сравнению</span></button>
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Быстрый просмотр</span></button>
+												</div>

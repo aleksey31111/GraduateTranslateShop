@@ -1,0 +1,11 @@
+<!-- 15 -->
+
+{% get_available_languages as languages %}
+
+{% translate "Посмотреть Категорию в:" %}
+{% for lang_code, lang_name in languages %}
+    {% language lang_code %}
+    <a href="{% url 'category' slug=category.slug %}">{{ lang_name }}</a>
+    {% endlanguage %}
+{% endfor %}
+<!-- 24 -->

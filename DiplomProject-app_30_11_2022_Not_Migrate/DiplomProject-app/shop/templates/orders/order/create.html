@@ -1,0 +1,48 @@
+{% extends "shop/base.html" %}
+
+{% load i18n %}
+
+<form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+    <input name="next" type="hidden" value="{{ redirect_to }}" />
+    <select name="language">
+        {% get_current_language as LANGUAGE_CODE %}
+        {% get_available_languages as LANGUAGES %}
+        {% get_language_info_list for LANGUAGES as languages %}
+        {% for language in languages %}
+            <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected="selected"{% endif %}>
+                {{ language.name_local }} ({{ language.code }})
+            </option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="{% trans 'Перевести' %}" />
+</form>
+
+{% block title %}{% trans 'Оформить Покупку' %}{% endblock %}
+
+{% block content %}
+    <h1>{% trans 'Оформление заказа' %}'</h1>
+    <div class="order-info">
+        <h3 style="color:violet">{% trans 'Ваш Заказ' %}</h3>
+        <ul>
+            {% for item in cart %}
+                <li>
+                    {{ item.quantity }}x {{ item.product.name }}
+                    <span>${{ item.total_price }}</span>
+                </li>
+            {% endfor %}
+            {% if cart.coupon %}
+                <li>
+                    "{{ cart.coupon.code }}" ({{ cart.coupon.discount }}% off)
+                    <span>- ${{ cart.get_discount|floatformat:"2" }}</span>
+                </li>
+            {% endif %}
+        </ul>
+
+        <p style="font-size:25; color:darkred;">{% trans 'Общая Скидка: ' %} ${{ cart.get_total_price_after_discount|floatformat:"2" }}</p>
+    </div>
+    <form action="." method="post" class="order-form">
+        {{ form.as_p }}
+        <p><input type="submit" value="{% trans 'Оформить Заказ' %}"></p>
+        {% csrf_token %}
+    </form>
+{% endblock %}

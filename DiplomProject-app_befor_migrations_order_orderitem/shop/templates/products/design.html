@@ -1,0 +1,20 @@
+{% extends 'base_users.html' %}
+
+{% block content %}
+
+
+	<h1>Контакты</h1>
+    <h4>Оформляйте покупки  плнравившихся Устройств у нас.</h4>
+        <p>
+            Пожалуйста, Заполните поле Номер Карты и сообщение.
+        </p>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button>Оформить</button>
+    </form>
+
+    <h3><a href="{% url 'index' %} " style="color:red">Вернутся на главную Страницу</a></h3>
+
+
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends "shop/base.html" %}
+{% load static %}
+{% block title %}
+    Your shopping cart
+{% endblock %}
+{% block content %}
+    <h1>Ваша Карта Покупок</h1>
+    <table class="cart">
+        <thead>
+        <tr>
+            <th>Изображение</th>
+            <th>Название</th>
+            <th>Количество</th>
+            <th>Удалить</th>
+            <th>Единичная стоимость</th>
+            <th>Цена</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for item in cart %}
+            {% with product=item.product %}
+                <tr>
+                    <td>
+                        <a href="{{ product.get_absolute_url }}">
+                            <img width="300" src="
+                                {% if product.image %}
+                                    {{ product.image.url }}
+                                {% else %}
+                                    {% static 'img/no_image.png' %}
+                                {% endif %}">
+                        </a>
+                    </td>
+                    <td>{{ product.name }}</td>
+                    <td style="color:red; font-size:20px;">{{ item.quantity }}</td>
+                    <td><a href="{% url 'cart:cart_remove' product.id%}" style="color:#dc3545; font-size:20px;">Удалить покупку</a></td>
+                    <td class="num">{{ item.price }} руб.</td>
+                    <td class="num">{{ item.total_price }} руб.</td>
+                </tr>
+            {% endwith %}
+        {% endfor %}
+        <tr class="total">
+            <td>Общая Сумма за весь товар</td>
+
+            <td class="num">{{ cart.get_total_price }} руб.</td>
+        </tr>
+        </tbody>
+    </table>
+    <p class="text-right">
+        <a href="{% url 'products:product_list' %}" class="button light">
+            <input type="submit" value="Продолжить Покупки" style="color:#dc3545; font-size:30px;"></a>
+        <a href="{% url 'orders:order_create' %}" class="button">
+            <input type="submit" value="Оформить Покупку" style="color:#dc3545; font-size:30px;"></a>
+    </p>
+{% endblock %}

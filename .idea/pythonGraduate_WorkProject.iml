@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/outer_view_3/programming_shop" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DiplomProject-app_try_Orders/DiplomProject-app" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DiplomProject-app_try_Orders/DiplomProject-app/shop" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DiplomProject-app_COPY_1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DiplomProject-app_Not_Add_In_Basket/shop" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DiplomProject-app/shop" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DiplomProject-app_30_11_2022_Not_Migrate/DiplomProject-app/shop" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/venv" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.10 (pythonGraduate_WorkProject)" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

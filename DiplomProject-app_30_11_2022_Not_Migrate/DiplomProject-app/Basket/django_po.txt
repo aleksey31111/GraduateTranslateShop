@@ -1,0 +1,31 @@
+#: .\shop\settings.py:127
+msgid "Russian"
+msgstr "Русский"
+
+#: .\shop\settings.py:129
+msgid "English"
+msgstr "English"
+
+#: .\shop\settings.py:131
+msgid "Spanish"
+msgstr "Spanish"
+
+#: .\shop\settings.py:133
+msgid "Chinese"
+msgstr "Chinese"
+
+#: .\shop\settings.py:135
+msgid "日本語"
+msgstr "日本語"
+
+#: .\templates\products\index.html:84
+msgid "Products"
+msgstr "Товары"
+msgstr "Productos"
+msgstr "产品展示"
+
+#: .\templates\products\index.html:129
+msgid "Product view"
+msgstr "Просмотр товара"
+msgstr "Vista del producto"
+msgstr "产品视图"

@@ -1,0 +1,15 @@
+<!-- 156 -->                                <div class="add-to-cart">
+												<a href=" url 'basket_add' product.id %}">
+													<input type="submit" class="add-to-cart-btn" value="Добавить в корзину">
+														<i class="fa fa-shopping-cart"></i> Добавить в корзину
+
+												</a>
+<!-- 162 -->								</div>
+
+<!-- 274 -->                      <div class="add-to-cart">
+									<a href="{% url 'basket_add' product.id %}">
+										<input type="submit" class="add-to-cart-btn" value="Добавить в корзину">
+											<i class="fa fa-shopping-cart"></i>
+
+									</a>
+<!-- 281 -->                    </div>

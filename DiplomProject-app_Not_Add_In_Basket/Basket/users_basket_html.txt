@@ -1,0 +1,7 @@
+<!-- 28 -->                 <a href="{% url 'basket_add' basket.product.id %}"
+                               style="text-decoration: none; color: gray;">
+                                <i class="fas fa-cart-plus"></i>
+                            </a>
+                            <a href="{% url 'basket_delete' basket.id %}" style="text-decoration: none; color: gray;">
+                                <i class="far fa-trash-alt"></i>
+<-- 34 -->                  </a>

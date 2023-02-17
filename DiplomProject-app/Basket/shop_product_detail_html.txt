@@ -1,0 +1,30 @@
+{% extends "shop/base.html" %}
+{% load static %}
+{% block title %}
+    {% if category %}{{ category.title }}{% else %}Products{% endif %}
+{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/style_detail_product.css' %}" xmlns="http://www.w3.org/1999/html">
+{% endblock %}
+{% block content %}
+
+    <div class="product-detail">
+        <img src="{% if product.image %}{{ product.image.url }}{% else %}{% static "img/no_image.png" %}{% endif %}">
+        <h1>{{ product.name }}</h1>
+        <h2><a href="{{ product.category.get_absolute_url }}">{{ product.category }}</a></h2>
+        <p class="price">${{ product.price }}</p>
+        {{ product.description|linebreaks }}
+    </div>
+{% endblock %}
+
+<!-- 12 -->
+
+{% get_available_languages as languages %}
+
+{% translate "Посмотреть Категорию в:" %}
+{% for lang_code, lang_name in languages %}
+    {% language lang_code %}
+    <a href="{% url 'category' slug=category.slug %}">{{ lang_name }}</a>
+    {% endlanguage %}
+{% endfor %}
+<!-- 21 -->

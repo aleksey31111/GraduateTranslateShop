@@ -1,0 +1,278 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-14 00:06+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\shop\settings.py:125
+msgid "Russia"
+msgstr "Русский"
+
+#: .\shop\settings.py:127
+msgid "English"
+msgstr ""
+
+#: .\shop\settings.py:129
+msgid "Spain"
+msgstr ""
+
+#: .\shop\settings.py:131
+msgid "China"
+msgstr "China"
+
+#: .\shop\settings.py:133
+msgid "日本語"
+msgstr ""
+
+#: .\templates\base.html:40 .\templates\base_products.html:58
+#: .\templates\products\basket.html:14 .\templates\products\index.html:27
+#: .\templates\shop\product\detail.html:25
+msgid "Перевести"
+msgstr "翻译"
+
+#: .\templates\base.html:47 .\templates\base.html:48
+#: .\templates\shop\base.html:36 .\templates\shop\product\list.html:20
+msgid "Магазин Устройств"
+msgstr "设备商店"
+
+#: .\templates\base.html:55
+msgid "Каталог"
+msgstr "目录"
+
+#: .\templates\base.html:66 .\templates\base_products.html:79
+msgid "Выйти"
+msgstr "出去"
+
+#: .\templates\base.html:72 .\templates\base_products.html:82
+msgid "Войти"
+msgstr "进来"
+
+#: .\templates\base_products.html:68
+msgid "Нижнекамск"
+msgstr "下卡姆斯克"
+
+#: .\templates\base_products.html:129 .\templates\base_products.html:262
+#: .\templates\base_products.html:270
+msgid "Обратная связь"
+msgstr "反馈"
+
+#: .\templates\base_products.html:141
+msgid "Просмотр Профайла"
+msgstr "配置文件视图"
+
+#: .\templates\base_products.html:154
+msgid "Просмотр Корзины"
+msgstr "查看购物车"
+
+#: .\templates\base_products.html:189 .\templates\shop\product\list.html:22
+msgid "Категории"
+msgstr "类别"
+
+#: .\templates\base_products.html:192
+msgid "Товары всех категорий"
+msgstr "所有类别的产品"
+
+#: .\templates\base_products.html:226
+msgid "О нас"
+msgstr "关于我们"
+
+#: .\templates\base_products.html:227
+msgid "Дипломная работа WEB-программирование"
+msgstr "论文WEB编程"
+
+#: .\templates\base_products.html:228
+msgid "на языке Python."
+msgstr "在 Python 中。"
+
+#: .\templates\base_products.html:243
+msgid "Категории товара"
+msgstr "产品类别"
+
+#: .\templates\base_products.html:283
+msgid "Профиль"
+msgstr "轮廓"
+
+#: .\templates\base_products.html:283 .\templates\base_products.html:293
+msgid "Корзина"
+msgstr "篮子"
+
+#: .\templates\base_products.html:288
+msgid "Мой профиль"
+msgstr "我的简历"
+
+#: .\templates\base_products.html:299
+msgid "Войти Зарегистрироваться"
+msgstr "登录 注册"
+
+#: .\templates\products\basket.html:56
+msgid "Корзина пуста"
+msgstr "购物车是空的"
+
+#: .\templates\products\detail_product.html:24
+#: .\templates\shop\product\detail.html:38
+msgid "Категория:"
+msgstr "类别："
+
+#: .\templates\products\detail_product.html:25
+#: .\templates\shop\product\detail.html:40
+msgid "Название:"
+msgstr "姓名："
+
+#: .\templates\products\detail_product.html:26
+#: .\templates\shop\product\detail.html:41
+#: .\templates\shop\product\list.html:62
+msgid "Описание:"
+msgstr "描述："
+
+#: .\templates\products\detail_product.html:27
+#: .\templates\shop\product\detail.html:42
+msgid "Короткое описание:"
+msgstr "简短的介绍："
+
+#: .\templates\products\detail_product.html:28
+#: .\templates\shop\product\detail.html:43
+#: .\templates\shop\product\list.html:65
+msgid "Цена:"
+msgstr "价格："
+
+#: .\templates\products\detail_product.html:29
+#: .\templates\shop\product\detail.html:44
+#: .\templates\shop\product\list.html:64
+msgid "Количество:"
+msgstr "数量："
+
+#: .\templates\products\detail_product.html:30
+#: .\templates\shop\product\detail.html:45
+msgid "Время добавления товара:"
+msgstr "添加项目的时间："
+
+#: .\templates\products\detail_product.html:31
+#: .\templates\shop\product\detail.html:46
+msgid "Время обновления товара:"
+msgstr "添加项目的时间："
+
+#: .\templates\products\index.html:42 .\templates\products\index.html:53
+msgid "Коллекция"
+msgstr "收藏"
+
+#: .\templates\products\index.html:86
+msgid "Товары"
+msgstr "产品"
+
+#: .\templates\products\index.html:115
+msgid "НОВЫЙ"
+msgstr "新的"
+
+#: .\templates\products\index.html:131
+msgid "Просмотр товара"
+msgstr "产品视图"
+
+#: .\templates\products\index.html:137
+msgid "Перейти"
+msgstr "去"
+
+#: .\templates\products\index.html:179
+msgid "Дней"
+msgstr "天"
+
+#: .\templates\products\index.html:185
+msgid "Часы"
+msgstr "手表"
+
+#: .\templates\products\index.html:191
+msgid "Минуты"
+msgstr "分钟"
+
+#: .\templates\products\index.html:201
+msgid "Товары на любой вкус"
+msgstr "适合各种口味的商品"
+
+#: .\templates\products\index.html:202
+msgid "Качественные товары"
+msgstr "正品"
+
+#: .\templates\products\index.html:203
+msgid "Посмотреть товары"
+msgstr "查看产品"
+
+#: .\templates\products\index.html:230
+msgid "Выгодное предложение"
+msgstr "有利可图的提议"
+
+#: .\templates\products\index.html:256
+msgid "Перейти к Товару для Покупки"
+msgstr "转到要购买的项目"
+
+#: .\templates\products\products.html:22
+msgid "Перевод"
+msgstr "翻译"
+
+#: .\templates\products\products.html:46 .\templates\shop\product\list.html:102
+msgid "Следующая"
+msgstr "下一个"
+
+#: .\templates\shop\base.html:37
+msgid "Выбор товара"
+msgstr "产品选择"
+
+#: .\templates\shop\base.html:43
+msgid "В вашей корзине:"
+msgstr "在您的购物车中："
+
+#: .\templates\shop\base.html:45
+msgid "Устройства На Сумму"
+msgstr "设备价值"
+
+#: .\templates\shop\base.html:46 .\templates\shop\product\detail.html:43
+msgid "руб."
+msgstr "卢布。"
+
+#: .\templates\shop\base.html:49
+msgid "Ваша Корзина Пуста"
+msgstr "你的篮子是空的"
+
+#: .\templates\shop\product\detail.html:44
+msgid "шт"
+msgstr "事物"
+
+#: .\templates\shop\product\detail.html:55
+msgid "Добавить в корзину"
+msgstr "添加到购物车"
+
+#: .\templates\shop\product\list.html:25
+msgid "Все категории"
+msgstr "所有类别"
+
+#: .\templates\shop\product\list.html:41
+msgid "Поиск"
+msgstr "搜索"
+
+#: .\templates\shop\product\list.html:63
+msgid "Краткое описание:"
+msgstr "简短的介绍："
+
+#: .\templates\shop\product\list.html:72
+msgid "Перейти к покупке"
+msgstr "去购买"
+
+#: .\templates\shop\product\list.html:87
+msgid "Предыдущая"
+msgstr "以前的"
+
+#: .\templates\shop\product\list.html:119
+msgid "Авторское Право &copy; Store 2021"
+msgstr "版权 &copy; Store 2021"

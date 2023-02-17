@@ -1,0 +1,41 @@
+<!-- 12.10.2022 -->
+{% extends 'base_products.html' %}
+
+{% block content %}
+
+    <div class="col-12">
+        <div class="contact-title">
+            <h1>Контакты</h1>
+            <h4>Напишите нам, если у вас есть вопросы</h4>
+            <p>
+                Пожалуйста, напишите свое имя, адрес электронной почты и сообщение.
+            </p>
+        </div>
+    </div>
+    <form method="post">
+        {% csrf_token %}
+        <div class="row">
+            <div class="col-12">
+                {% if form.name.errors %}
+                <div class="alert alert-messaage">
+                    <strong>{{ form.name.errors</strong>
+                </div>
+                {% endif %}
+                <div class="form-group">
+                    {{ form.name }}
+                </div>
+            </div>
+        </div>
+<!--        {{ form.as_p }}-->
+        <button>Отправить</button>
+    </form>
+
+{% endblock %}
+
+
+<!-- 14.10.2022 --><-- 10 -->
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button>Отправить</button>
+<!-- 15 --></form>

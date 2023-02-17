@@ -1,0 +1,1 @@
+<!-- 43 --><button type="button" class="btn btn-success btn-lg float-right">Оформить</button>

@@ -1,0 +1,12 @@
+                            {% product in products %}
+                            {% if products.basket_add %}
+                            <a href="{% url 'basket_add' basket.product.id %}"
+                               style="text-decoration: none; color: gray;">
+                                <i class="fas fa-cart-plus"></i>
+                            </a>
+                            {% elif profitable_proposition.pp_basket_add %}
+                                <a href="{% url 'pp_basket_add' basket.profitable_proposition.id %}"
+                                    style="text-decoration: none; color: gray;">
+                                    <i class="fas fa-cart-plus"></i>
+                                </a>
+                            {% endif %}

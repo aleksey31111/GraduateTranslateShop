@@ -1,0 +1,14 @@
+# def accessories(request, category_id=7):
+#     context = {
+#         'title': 'Диски',
+#         'accessories': Product.objects.filter(category_id=category_id)
+#     }
+#     return render(request, 'products/accessories.html', context)
+#
+#
+# def discs(request):
+#     return render(request, 'products/discs_html.txt')
+#
+#
+# def robots(request):
+#     return render(request, 'products/robots.html')

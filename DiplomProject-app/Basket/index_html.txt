@@ -1,0 +1,261 @@
+<!-- 14 -->			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<!-- shop -->
+					{% for category in categories %}
+					{% if category.id == 1 %}
+					<div class="col-md-4 col-xs-6">
+						<div class="shop">
+							<div class="shop-img">
+								<img src="{% static 'img/Discs_collection_game.jpg' %}" style="height:230px"  alt="">
+								<p>
+									<p style="text-indent:120px">Игры | ПО для PC<br></p>
+									<p style="text-indent:90px">для Разных Игровых устройств.</p>
+								</p>
+							</div>
+							<div class="shop-body">
+								<h3>Диски<br>Коллекция</h3>
+								<a href="{% url 'category' category.id %}" class="list-group-item">
+									{{ category.name }}
+
+									<i class="fa fa-arrow-circle-right">
+									</i>
+								</a>
+
+							</div>
+						</div>
+					</div>
+					<!-- /shop -->
+
+					<!-- shop -->
+					{% elif category.id == 3 %}
+					<div class="col-md-4 col-xs-6">
+						<div class="shop">
+							<div class="shop-img">
+								<img src="{% static 'img/shop03.png' %}" alt="">
+								<p>
+									<p style="text-indent:110px">Часы Наушники  <br></p>
+									<p style="text-indent:80px">Зарядники Коммуникаторы.</p>
+								</p>
+							</div>
+							<div class="shop-body">
+								<h3>Аксессуары<br>Коллекция</h3>
+
+								<a href="{% url 'category' category.id %}" class="list-group-item">
+									{{ category.name }}
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- /shop -->
+
+					<!-- shop -->
+					{% elif category.id == 2 %}
+					<div class="col-md-4 col-xs-6">
+						<div class="shop">
+							<div class="shop-img">
+								<img src="{% static 'img/robot_tank_python.jpg' %}" style="height:230px" alt="">
+							</div>
+							<p>
+									<p style="text-indent:120px">Роботы  <br></p>
+									<p style="text-indent:90px">python</p>
+							</p>
+							<div class="shop-body">
+								<h3>Роботы<br>Коллекция</h3>
+
+								<a href="{% url 'category' category.id %}" class="list-group-item">
+									{{ category.name }}
+								</a>
+
+							</div>
+						</div>
+					</div>
+					{% endif %}
+					{% endfor %}
+					<!-- /shop -->
+				</div>
+				<!-- /row -->
+			</div>
+<!-- 94 -->			<!-- /container -->
+
+<!-- 56 -->	<!-- section title -->
+					<div class="col-md-12">
+						<div class="section-title">
+							<h3 class="title">Товары</h3>
+							<div class="section-nav">
+								<ul class="section-tab-nav tab-nav">
+									{% for category in categories %}
+									{% if category.id == 1 %}
+									<li class="active"><a data-toggle="tab1" href="{% url 'category' category.id %}">Диски</a></li>
+									{% elif category.id == 3 %}
+									<li><a data-toggle="tab1" href="{% url 'category' category.id %}">Аксессуары</a></li>
+									{% elif category.id == 2 %}
+									<li><a data-toggle="tab1" href="{% url 'category' category.id %}">Роботы</a></li>
+									{% endif %}
+									{% endfor %}
+								</ul>
+							</div>
+						</div>
+					</div>
+<!-- 75 --><!-- /section title -->
+
+<!-- 108 -->								<div class="add-to-cart">
+												<a href="{% url 'basket_add' product.id %}">
+													<input type="submit" class="add-to-cart-btn" value="Добавить в корзину">
+														<i class="fa fa-shopping-cart"></i> Добавить в корзину
+
+												</a>
+<!-- 114 -->								</div>
+
+<!-- 144 -->	<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="hot-deal">
+							<ul class="hot-deal-countdown">
+								<li>
+									<div>
+										<h3>02</h3>
+										<span>Days</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<h3>10</h3>
+										<span>Hours</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<h3>34</h3>
+										<span>Mins</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<h3>60</h3>
+										<span>Secs</span>
+									</div>
+								</li>
+							</ul>
+							<h2 class="text-uppercase">Товары на любой вкус</h2>
+							<p>Качественные товары</p>
+							<a class="primary-btn cta-btn" href="{% url 'products' %}">Посмотреть товары</a>
+						</div>
+					</div>
+				</div>
+<!-- 180 -->    <!-- /row -->
+
+<!-- 208 -->			<div class="products-widget-slick" data-nav="#slick-nav-3">
+							<div>
+								<!-- product widget -->
+								{% for product in products %}
+								{% if product.category.id == 4 %}
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="{% if product.image %}
+										{{ product.image.url }}
+										{% else %} {% static 'img/default_shop.jpg' %} {% endif %} "
+											 alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">{{ product.category }}</p>
+										<h3 class="product-name">{{ product.name|safe|truncatewords:30 }}</h3>
+										<h4 class="product-price">{{ product.price }} руб</h4>
+									</div>
+								</div>
+								<div class="add-to-cart">
+<!-- 227 -->						<a href="{% url 'basket_add' product.id %}">
+										<input type="submit" class="add-to-cart-btn" value="Добавить в корзину">
+											<i class="fa fa-shopping-cart"></i>
+
+									</a>
+								</div>
+								{% endif %}
+								{% endfor %}
+								<!-- /product widget -->
+							</div>
+
+<!-- 238 -->			</div>
+
+
+<!-- 11.11.2022 --><!-- 26 --><!-- shop -->
+					{% for c in categories %}
+                <li {% if category.slug == c.slug %}class="selected"{% endif %}>
+                    <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
+                </li>
+            {% endfor %}
+
+					<!-- /shop -->
+
+					<!-- shop -->
+					{% for c in categories %}
+                <li {% if category.slug == c.slug %}class="selected"{% endif %}>
+                    <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
+                </li>
+            {% endfor %}
+<!-- 41 -->			<!-- /shop -->
+
+<!-- 41 --><!-- section title -->
+					<div class="col-md-12">
+						<div class="section-title">
+							<h3 class="title">Товары</h3>
+							<div class="section-nav">
+								<ul class="section-tab-nav tab-nav">
+									{% for c in categories %}
+                <li {% if category.slug == c.slug %}class="selected"{% endif %}>
+                    <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
+                </li>
+            		{% endfor %}
+								</ul>
+							</div>
+						</div>
+					</div>
+<!-- 56 --><!-- /section title -->
+
+<!-- 22 -->         <div class="col-md-4 col-xs-6">
+						<div class="shop">
+							<div class="shop-img">
+<!-- 25 -->						<img src="{% static 'img/Discs_collection_game.jpg' %}" style="height:230px"  alt="">
+								<p>
+									<p style="text-indent:120px">Игры | ПО для PC<br></p>
+									<p style="text-indent:90px">для Разных Игровых устройств.</p>
+								</p>
+							</div>
+							<div class="shop-body">
+								<h3>{{ c.name }}<br>Коллекция</h3>
+								<a href="{{ c.get_absolute_url }}" class="list-group-item">
+									{{ c.name }}
+
+									<i class="fa fa-arrow-circle-right">
+									</i>
+								</a>
+
+							</div>
+						</div>
+<!-- 42 -->			</div>
+
+
+
+<!-- 12 --><!-- SECTION -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<!-- shop -->
+					{% for c in categories %}
+                <li {% if category.slug == c.slug %}class="selected"{% endif %}>
+                    <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
+                </li>
+            		{% endfor %}
+					<!-- /shop -->
+
+
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+<!-- 32 --><!-- /SECTION -->

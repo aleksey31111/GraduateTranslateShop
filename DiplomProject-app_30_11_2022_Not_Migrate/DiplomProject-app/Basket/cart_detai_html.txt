@@ -1,0 +1,5 @@
+<!-- 18-11-2022 --><!--41 --><tr class="total">
+    <td>Total</td>
+    <td colspan="4"></td>
+    <td class="num">${{ cart.get_total_price }}</td>
+<!-- 45 --></tr>

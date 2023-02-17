@@ -1,0 +1,74 @@
+<!-- 153 --><!-- NAVIGATION -->
+		<nav id="navigation">
+			<!-- container -->
+			<div class="container">
+				<!-- responsive-nav -->
+				<div id="responsive-nav">
+					<!-- NAV -->
+					<ul class="main-nav nav navbar-nav">
+						{% for category in categories %}
+						{% if category.id == 4 %}
+						<li class="active"><a href="{% url 'index' %}#">Главная</a></li>
+						<li><a href="{% url 'category' category.id %}">Выгодное предложения</a></li>
+						<li><a href="{% url 'products' %}">Категории</a></li>
+
+
+						{% elif category.id == 1 %}
+						<li><a href="{% url 'category' category.id %}">Диски</a></li>
+						{% elif category.id == 3 %}
+						<li><a href="{% url 'category' category.id %}">Аксессуары</a></li>
+						{% elif category.id == 2 %}
+						<li><a href="{% url 'category' category.id %}">Роботы</a></li>
+						{% endif %}
+						{% endfor %}
+					</ul>
+					<!-- /NAV -->
+				</div>
+				<!-- /responsive-nav -->
+			</div>
+			<!-- /container -->
+		</nav>
+<!-- 183 --><!-- /NAVIGATION -->
+
+<!-- 211 -->			<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Категории товара</h3>
+								<ul class="footer-links">
+									{% for category in categories %}
+									{% if category.id == 1 %}
+									<li><a href="{% url 'category' category.id %}">Диски</a></li>
+									{% elif category.id == 3 %}
+									<li><a href="{% url 'category' category.id %}">Аксессуары</a></li>
+									{% elif category.id == 2 %}
+									<li><a href="{% url 'category' category.id %}">Роботы</a></li>
+									{% elif category.id == 4 %}
+									<li><a href="{% url 'category' category.id %}">Выгодные предложения</a></li>
+									{% endif %}
+									{% endfor %}
+
+								</ul>
+							</div>
+<!-- 229 -->			</div>
+
+<!-- 155 --><!-- container -->
+			<div class="container">
+				<!-- responsive-nav -->
+				<div id="responsive-nav" style="display: flex; align-content: center;">
+					<!-- NAV -->
+					<h3>Категории</h3>
+       			<ul style="display: flex; align-content: center; margin-left: 20px;">
+					<li {% if not category %}class="selected"{% endif %}>
+						<a href="{% url 'products:product_list' %}" style="color:red; font-size:18px;">Товары всех категорий</a>
+					</li>
+					{% for c in categories %}
+						<li {% if category.slug == c.slug %}class="selected"{% endif %}
+							style="margin-left:20px; font-color:violet; font-size:18px;">
+							<a href="{{ c.get_absolute_url }}"  >{{ c.name }}</a>
+						</li>
+					{% endfor %}
+				</ul>
+					<!-- /NAV -->
+				</div>
+				<!-- /responsive-nav -->
+			</div>
+<!-- 176 --><!-- /container -->

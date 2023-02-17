@@ -1,0 +1,278 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-14 00:05+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\shop\settings.py:125
+msgid "Russia"
+msgstr "Русский"
+
+#: .\shop\settings.py:127
+msgid "English"
+msgstr ""
+
+#: .\shop\settings.py:129
+msgid "Spain"
+msgstr "Spanish"
+
+#: .\shop\settings.py:131
+msgid "China"
+msgstr ""
+
+#: .\shop\settings.py:133
+msgid "日本語"
+msgstr ""
+
+#: .\templates\base.html:40 .\templates\base_products.html:58
+#: .\templates\products\basket.html:14 .\templates\products\index.html:27
+#: .\templates\shop\product\detail.html:25
+msgid "Перевести"
+msgstr "Traducir"
+
+#: .\templates\base.html:47 .\templates\base.html:48
+#: .\templates\shop\base.html:36 .\templates\shop\product\list.html:20
+msgid "Магазин Устройств"
+msgstr "Tienda de dispositivos"
+
+#: .\templates\base.html:55
+msgid "Каталог"
+msgstr "Catalogar"
+
+#: .\templates\base.html:66 .\templates\base_products.html:79
+msgid "Выйти"
+msgstr "Salir"
+
+#: .\templates\base.html:72 .\templates\base_products.html:82
+msgid "Войти"
+msgstr "Entrar"
+
+#: .\templates\base_products.html:68
+msgid "Нижнекамск"
+msgstr "Nizhnekamsk"
+
+#: .\templates\base_products.html:129 .\templates\base_products.html:262
+#: .\templates\base_products.html:270
+msgid "Обратная связь"
+msgstr "Retroalimentación"
+
+#: .\templates\base_products.html:141
+msgid "Просмотр Профайла"
+msgstr "Vista de perfil"
+
+#: .\templates\base_products.html:154
+msgid "Просмотр Корзины"
+msgstr "Ver carrito"
+
+#: .\templates\base_products.html:189 .\templates\shop\product\list.html:22
+msgid "Категории"
+msgstr "Categorías"
+
+#: .\templates\base_products.html:192
+msgid "Товары всех категорий"
+msgstr "Productos de todas las categorías"
+
+#: .\templates\base_products.html:226
+msgid "О нас"
+msgstr "Sobre Nosotros"
+
+#: .\templates\base_products.html:227
+msgid "Дипломная работа WEB-программирование"
+msgstr "Programación WEB de tesis"
+
+#: .\templates\base_products.html:228
+msgid "на языке Python."
+msgstr "en Python."
+
+#: .\templates\base_products.html:243
+msgid "Категории товара"
+msgstr "Categorías de Producto"
+
+#: .\templates\base_products.html:283
+msgid "Профиль"
+msgstr "Perfil"
+
+#: .\templates\base_products.html:283 .\templates\base_products.html:293
+msgid "Корзина"
+msgstr "Cesta"
+
+#: .\templates\base_products.html:288
+msgid "Мой профиль"
+msgstr "Mi perfil"
+
+#: .\templates\base_products.html:299
+msgid "Войти Зарегистрироваться"
+msgstr "Iniciar sesión Registrarse"
+
+#: .\templates\products\basket.html:56
+msgid "Корзина пуста"
+msgstr "El carrito esta vacío"
+
+#: .\templates\products\detail_product.html:24
+#: .\templates\shop\product\detail.html:38
+msgid "Категория:"
+msgstr "Categoría:"
+
+#: .\templates\products\detail_product.html:25
+#: .\templates\shop\product\detail.html:40
+msgid "Название:"
+msgstr "Nombre:"
+
+#: .\templates\products\detail_product.html:26
+#: .\templates\shop\product\detail.html:41
+#: .\templates\shop\product\list.html:62
+msgid "Описание:"
+msgstr "Descripción:"
+
+#: .\templates\products\detail_product.html:27
+#: .\templates\shop\product\detail.html:42
+msgid "Короткое описание:"
+msgstr "Breve descripción:"
+
+#: .\templates\products\detail_product.html:28
+#: .\templates\shop\product\detail.html:43
+#: .\templates\shop\product\list.html:65
+msgid "Цена:"
+msgstr "Precio:"
+
+#: .\templates\products\detail_product.html:29
+#: .\templates\shop\product\detail.html:44
+#: .\templates\shop\product\list.html:64
+msgid "Количество:"
+msgstr "Cantidad:"
+
+#: .\templates\products\detail_product.html:30
+#: .\templates\shop\product\detail.html:45
+msgid "Время добавления товара:"
+msgstr "Hora de agregar el artículo:"
+
+#: .\templates\products\detail_product.html:31
+#: .\templates\shop\product\detail.html:46
+msgid "Время обновления товара:"
+msgstr "Tiempo de actualización del artículo:"
+
+#: .\templates\products\index.html:42 .\templates\products\index.html:53
+msgid "Коллекция"
+msgstr "Recopilación"
+
+#: .\templates\products\index.html:86
+msgid "Товары"
+msgstr "Productos"
+
+#: .\templates\products\index.html:115
+msgid "НОВЫЙ"
+msgstr "NUEVO"
+
+#: .\templates\products\index.html:131
+msgid "Просмотр товара"
+msgstr "Vista del producto"
+
+#: .\templates\products\index.html:137
+msgid "Перейти"
+msgstr "Vamos"
+
+#: .\templates\products\index.html:179
+msgid "Дней"
+msgstr "Días"
+
+#: .\templates\products\index.html:185
+msgid "Часы"
+msgstr "Reloj"
+
+#: .\templates\products\index.html:191
+msgid "Минуты"
+msgstr "Minutos"
+
+#: .\templates\products\index.html:201
+msgid "Товары на любой вкус"
+msgstr "Productos para todos los gustos"
+
+#: .\templates\products\index.html:202
+msgid "Качественные товары"
+msgstr "Productos de calidad"
+
+#: .\templates\products\index.html:203
+msgid "Посмотреть товары"
+msgstr "Ver productos"
+
+#: .\templates\products\index.html:230
+msgid "Выгодное предложение"
+msgstr "propuesta Rentable"
+
+#: .\templates\products\index.html:256
+msgid "Перейти к Товару для Покупки"
+msgstr "Ir al Artículo a Comprar"
+
+#: .\templates\products\products.html:22
+msgid "Перевод"
+msgstr "Traducción"
+
+#: .\templates\products\products.html:46 .\templates\shop\product\list.html:102
+msgid "Следующая"
+msgstr "Próximo"
+
+#: .\templates\shop\base.html:37
+msgid "Выбор товара"
+msgstr "Selección de producto"
+
+#: .\templates\shop\base.html:43
+msgid "В вашей корзине:"
+msgstr "En tu carrito:"
+
+#: .\templates\shop\base.html:45
+msgid "Устройства На Сумму"
+msgstr "Dispositivos que valen"
+
+#: .\templates\shop\base.html:46 .\templates\shop\product\detail.html:43
+msgid "руб."
+msgstr "rublos."
+
+#: .\templates\shop\base.html:49
+msgid "Ваша Корзина Пуста"
+msgstr "tu Canasta Esta Vacía"
+
+#: .\templates\shop\product\detail.html:44
+msgid "шт"
+msgstr "cosa"
+
+#: .\templates\shop\product\detail.html:55
+msgid "Добавить в корзину"
+msgstr "Añadir al carrito"
+
+#: .\templates\shop\product\list.html:25
+msgid "Все категории"
+msgstr "Todas las categorias"
+
+#: .\templates\shop\product\list.html:41
+msgid "Поиск"
+msgstr "Búsqueda"
+
+#: .\templates\shop\product\list.html:63
+msgid "Краткое описание:"
+msgstr "Breve descripción:"
+
+#: .\templates\shop\product\list.html:72
+msgid "Перейти к покупке"
+msgstr "ir a Comprar"
+
+#: .\templates\shop\product\list.html:87
+msgid "Предыдущая"
+msgstr "Anterior"
+
+#: .\templates\shop\product\list.html:119
+msgid "Авторское Право &copy; Store 2021"
+msgstr "Derechos de autor &copiar; Tienda 2021"

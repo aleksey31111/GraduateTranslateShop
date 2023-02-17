@@ -1,0 +1,22 @@
+-DiplomProject/DiplomProject-app/templates/products/products.html:
+    <!-- BREADCRUMB -->  <!-- 12 -->
+		<div id="breadcrumb" class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="breadcrumb-tree">
+							<li><a href="#">Home</a></li>
+							<li><a href="{% url 'products' %}">Все категории</a></li>
+							<li><a href="#">Аксессуары</a></li>
+							<li><a href="#">Беспроводные наушники</a></li>
+							<li class="active">Переход к имени устройства</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /BREADCRUMB -->  <!-- 32 -->

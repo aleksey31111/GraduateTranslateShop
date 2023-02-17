@@ -1,0 +1,7 @@
+<!-- 30.09.2022 --> <!-- 4:38 -->
+
+                            <a href="{% url 'pp_basket_add' profitable_proposition.id %}">
+                                <button type="button" class="btn btn-outline-success">
+                                    Отправить в корзину
+                                </button>
+                            </a>

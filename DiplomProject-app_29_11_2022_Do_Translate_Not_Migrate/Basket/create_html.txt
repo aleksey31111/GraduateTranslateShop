@@ -1,0 +1,12 @@
+<!-- 16-11-2022 --><!-- 9 --><ul>
+            {% for item in cart %}
+                <li style="font-size: 23px; color:red;">
+                    Количество: {{ item.quantity }} Товар: {{ item.product.name }}
+                    <span>{{ item.total_price }} руб.</span>
+                </li>
+            {% endfor %}
+<!-- 16 --></ul>
+
+<!-- 22 -->
+<p style="font-size:25; color:darkred;">Общая Стоимость: {{ cart.get_total_price }} руб.</p>
+<!-- 24 -->

@@ -1,0 +1,91 @@
+{% extends "shop/base.html" %}
+{% load static %}
+{% load i18n %}
+
+<form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+    <input name="next" type="hidden" value="{{ redirect_to }}" />
+    <select name="language">
+        {% get_current_language as LANGUAGE_CODE %}
+        {% get_available_languages as LANGUAGES %}
+        {% get_language_info_list for LANGUAGES as languages %}
+        {% for language in languages %}
+            <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected="selected"{% endif %}>
+                {{ language.name_local }} ({{ language.code }})
+            </option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="{% trans 'Перевести' %}" />
+</form>
+{% block title %}
+    {% trans 'Ваша карта Покупок' %}
+{% endblock %}
+{% block content %}
+    <h1>{% trans 'Ваша Карта Покупок' %}</h1>
+    <table class="cart">
+        <thead>
+        <tr>
+            <th>{% trans 'Изображение' %}</th>
+            <th>{% trans 'Название' %}</th>
+            <th>{% trans 'Количество' %}</th>
+            <th>{% trans 'Удалить' %}</th>
+            <th>{% trans 'Единичная стоимость' %}</th>
+            <th>{% trans 'Цена' %}</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for item in cart %}
+            {% with product=item.product %}
+                <tr>
+                    <td>
+                        <a href="{{ product.get_absolute_url }}">
+                            <img width="300" src="
+                                {% if product.image %}
+                                    {{ product.image.url }}
+                                {% else %}
+                                    {% static 'img/no_image.png' %}
+                                {% endif %}">
+                        </a>
+                    </td>
+                    <td>{{ product.name }}</td>
+                    <td style="color:red; font-size:20px;">{{ item.quantity }}</td>
+                    <td><a href="{% url 'cart:cart_remove' product.id%}" style="color:#dc3545; font-size:20px;">{% trans 'Удалить покупку' %}</a></td>
+                    <td class="num">{{ item.price }} {% trans 'руб.' %}</td>
+                    <td class="num">{{ item.total_price }} {% trans 'руб.' %}</td>
+                </tr>
+            {% endwith %}
+        {% endfor %}
+        {% if cart.coupon %}
+    <tr class="subtotal"><td></td><td></td>
+        <td>{% trans 'Общая Скидка на Товар' %}</td>
+        <td colspan="4"></td>
+        <td class="num">{{ cart.get_total_price }} {% trans 'руб.' %}</td>
+    </tr>
+    <tr>
+        <td>
+            "{{ cart.coupon.code }}" {% trans 'Купон' %}
+            ({{ cart.coupon.discount }}% off)
+        </td>
+        <td colspan="4"></td>
+        <td class="num neg">
+            - ${{ cart.get_discount|floatformat:"2" }}
+        </td>
+    </tr>
+{% endif %}
+
+
+        </tbody>
+    </table>
+
+    <form action="{% url 'coupons:apply' %}" method="post">
+        {{ coupon_apply_form }}
+        <input type="submit" value="{% trans 'Применить' %}">
+        {% csrf_token %}
+    </form>
+
+    <p class="text-right">
+        <a href="{% url 'products:product_list' %}" class="button light">
+            <input type="submit" value="{% trans 'Продолжить Покупки' %}" style="color:#dc3545; font-size:30px;"></a>
+        <a href="{% url 'orders:order_create' %}" class="button">
+            <input type="submit" value="{% trans 'Оформить Покупку' %}" style="color:#dc3545; font-size:30px;"></a>
+    </p>
+{% endblock %}

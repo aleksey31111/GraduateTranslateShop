@@ -1,0 +1,299 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-29 22:06+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\shop\settings.py:127
+msgid "Russian"
+msgstr "Русский"
+
+#: .\shop\settings.py:129
+msgid "English"
+msgstr "English"
+
+#: .\templates\base_products.html:57 .\templates\products\index.html:26
+#: .\templates\shop\base.html:28 .\templates\shop\product\detail.html:25
+#: .\templates\shop\product\list.html:22
+msgid "Перевести"
+msgstr "Translate"
+
+#: .\templates\base_products.html:67
+#, fuzzy
+#| msgid "город Нижнекамск"
+msgid "Нижнекамск"
+msgstr "town Nizhnekamsk"
+
+#: .\templates\base_products.html:78
+msgid "Выйти"
+msgstr "Go Out"
+
+#: .\templates\base_products.html:81
+msgid "Войти"
+msgstr "Enter"
+
+#: .\templates\base_products.html:128 .\templates\base_products.html:261
+#: .\templates\base_products.html:269
+msgid "Обратная связь"
+msgstr "Feedback"
+
+#: .\templates\base_products.html:140
+msgid "Просмотр Профайла"
+msgstr "Profile view"
+
+#: .\templates\base_products.html:153
+msgid "Просмотр Корзины"
+msgstr "Basket view"
+
+#: .\templates\base_products.html:188 .\templates\shop\product\list.html:34
+msgid "Категории"
+msgstr "Categories"
+
+#: .\templates\base_products.html:191
+msgid "Товары всех категорий"
+msgstr "Products of all categories"
+
+#: .\templates\base_products.html:226
+msgid "Дипломная работа WEB-программирование"
+msgstr "Thesis WEB-programming"
+
+#: .\templates\base_products.html:227
+msgid "на языке Python."
+msgstr "in Python"
+
+#: .\templates\base_products.html:230
+msgid "город Нижнекамск"
+msgstr "town Nizhnekamsk"
+
+#: .\templates\base_products.html:242
+msgid "Категории товара"
+msgstr "Product view"
+
+#: .\templates\base_products.html:282
+msgid "Профиль"
+msgstr "Profile"
+
+#: .\templates\base_products.html:282 .\templates\base_products.html:292
+msgid "Корзина"
+msgstr "Basket"
+
+#: .\templates\base_products.html:287
+msgid "Мой профиль"
+msgstr "My profile"
+
+#: .\templates\base_products.html:298
+msgid "Войти Зарегистрироваться"
+msgstr "Login Register"
+
+
+#: .\templates\cart\detail.html:7
+msgid "Ваша Карта Покупок"
+msgstr "Your Purchase Card"
+
+#: .\templates\cart\detail.html:11
+msgid "Изображение"
+msgstr "Image"
+
+#: .\templates\cart\detail.html:12
+msgid "Название"
+msgstr "Name:"
+
+#: .\templates\cart\detail.html:13
+#, fuzzy
+#| msgid "Количество:"
+msgid "Количество"
+msgstr "Quantity:"
+
+#: .\templates\cart\detail.html:14
+msgid "Удалить"
+msgstr "Delete"
+
+#: .\templates\cart\detail.html:15
+msgid "Единичная стоимость"
+msgstr "Unit cost"
+
+#: .\templates\cart\detail.html:16
+msgid "Цена"
+msgstr "Price"
+
+#: .\templates\cart\detail.html:35
+msgid "Удалить покупку"
+msgstr "Delete purchase"
+
+#: .\templates\cart\detail.html:36 .\templates\cart\detail.html:37
+#: .\templates\cart\detail.html:45
+msgid "руб."
+msgstr "rubles."
+
+#: .\templates\cart\detail.html:43
+msgid "Общая Скидка на Товар"
+msgstr "Total Product Discount"
+
+#: .\templates\cart\detail.html:49
+msgid "Купон"
+msgstr "Coupon"
+
+#: .\templates\cart\detail.html:65
+msgid "Применить"
+msgstr "Apply"
+
+#: .\templates\cart\detail.html:71
+msgid "Продолжить Покупки"
+msgstr "Continue Shopping"
+
+#: .\templates\cart\detail.html:73
+msgid "Оформить Покупку"
+msgstr "Checkout"
+
+#: .\templates\products\index.html:40 .\templates\products\index.html:51
+msgid "Коллекция"
+msgstr "Collection"
+
+#: .\templates\products\index.html:84
+msgid "Товары"
+msgstr "Products"
+
+#: .\templates\products\index.html:129
+msgid "Просмотр товара"
+msgstr "Product view"
+
+#: .\templates\products\index.html:135
+msgid "Перейти"
+msgstr "Go to"
+
+#: .\templates\products\index.html:172
+msgid "Дня"
+msgstr "Days"
+
+#: .\templates\products\index.html:178
+msgid "Часов"
+msgstr "Hours"
+
+#: .\templates\products\index.html:184
+msgid "Минут"
+msgstr "Minuts"
+
+#: .\templates\products\index.html:190
+msgid "Секунд"
+msgstr "Seconds"
+
+#: .\templates\products\index.html:194
+msgid "Товары на любой вкус"
+msgstr "Goods for every taste"
+
+#: .\templates\products\index.html:195
+msgid "Качественные товары"
+msgstr "Quality goods"
+
+#: .\templates\products\index.html:196
+msgid "Посмотреть товары"
+msgstr "Product view"
+
+#: .\templates\products\index.html:222
+msgid "Выгодное предложение"
+msgstr "Profitable proposition"
+
+#: .\templates\products\index.html:247
+msgid "Перейти к Товару для Покупки"
+msgstr "Go to Item for Purchase"
+
+#: .\templates\shop\base.html:32
+msgid "Магазин Устройств"
+msgstr "Device Store"
+
+#: .\templates\shop\base.html:33
+msgid "Выбор товара"
+msgstr "Product view"
+
+#: .\templates\shop\base.html:39
+msgid "В вашей корзине:"
+msgstr "In your cart:"
+
+#: .\templates\shop\base.html:41
+msgid "Устройства На Сумму"
+msgstr "Devices worth"
+
+#: .\templates\shop\base.html:45
+msgid "Ваша Карта Пуста"
+msgstr "Your Card is Empty"
+
+#: .\templates\shop\product\detail.html:38
+msgid "Категория:"
+msgstr "Categories"
+
+#: .\templates\shop\product\detail.html:40
+msgid "Название:"
+msgstr "Name:"
+
+#: .\templates\shop\product\detail.html:41
+#: .\templates\shop\product\list.html:74
+msgid "Описание:"
+msgstr "Description:"
+
+#: .\templates\shop\product\detail.html:42
+msgid "Короткое описание:"
+msgstr "Short description:"
+
+#: .\templates\shop\product\detail.html:43
+#: .\templates\shop\product\list.html:77
+msgid "Цена:"
+msgstr "Price:"
+
+#: .\templates\shop\product\detail.html:43
+msgid "руб"
+msgstr "rubles"
+
+#: .\templates\shop\product\detail.html:44
+#: .\templates\shop\product\list.html:76
+msgid "Количество:"
+msgstr "Quantity:"
+
+#: .\templates\shop\product\detail.html:44
+msgid "шт"
+msgstr "things"
+
+#: .\templates\shop\product\detail.html:45
+msgid "Время добавления товара:"
+msgstr "Time to add item:"
+
+#: .\templates\shop\product\detail.html:46
+msgid "Время обновления товара:"
+msgstr "Item update time:"
+
+#: .\templates\shop\product\detail.html:55
+msgid "Добавить в корзину"
+msgstr "Add to Basket"
+
+#: .\templates\shop\product\list.html:37
+msgid "Все категории"
+msgstr "All Categories"
+
+#: .\templates\shop\product\list.html:75
+msgid "Краткое описание:"
+msgstr "Short description:"
+
+#: .\templates\shop\product\list.html:84
+msgid "Перейти к покупке"
+msgstr "Go to purchase"
+
+#: .\templates\shop\product\list.html:99
+msgid "Предыдущая"
+msgstr "Previous"
+
+#: .\templates\shop\product\list.html:114
+msgid "Следующая"
+msgstr "Next"

@@ -1,0 +1,8 @@
+<!-- 15.10.2022 -->
+    <h1>{{ product.name|safe }}</h1>
+	<div class="product-widget">
+	<img src="{% if product.image %}
+		{{ product.image.url }}
+		{% else %} {% static 'img/default_shop.jpg' %} {% endif %} "
+	alt="">
+	</div>

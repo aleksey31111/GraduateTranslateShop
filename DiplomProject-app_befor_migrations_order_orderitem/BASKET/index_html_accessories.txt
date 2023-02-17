@@ -1,0 +1,1 @@
+<a href="{% url 'products' %}" class="cta-btn">Начать покупки <i class="fa fa-arrow-circle-right"></i></a>
